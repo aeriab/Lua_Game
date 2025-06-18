@@ -20,8 +20,9 @@ function int(value)
     return value and 1 or 0
 end
 
--- function love.keypressed(key, unicode)
--- 	if key == "f8" then
--- 		love.event.quit()
--- 	end
--- end
+
+function love.keypressed(key, unicode)
+	if key == "f8" then
+		love.event.quit()
+	end
+end
