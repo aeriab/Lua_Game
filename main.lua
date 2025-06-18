@@ -16,7 +16,6 @@ function love.draw()
 end
 
 
-
 function int(value)
     return value and 1 or 0
 end
