@@ -22,7 +22,7 @@ end
 
 
 function love.keypressed(key, unicode)
-	if key == "f8" then
+	if (key == "f8" or key == "escape") then
 		love.event.quit()
 	end
 end
