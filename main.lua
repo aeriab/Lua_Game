@@ -4,6 +4,7 @@ function love.load()
     player.y = 200
 
     player.speed = 300
+    player.sprite = love.graphics.newImage('sprites/aeria-logo.png')
 end
 
 function love.update(dt)
@@ -12,8 +13,16 @@ function love.update(dt)
 end
 
 function love.draw()
-    love.graphics.circle("fill", player.x, player.y, 50)
+    love.graphics.draw(player.sprite, player.x, player.y)
 end
+
+
+
+
+
+
+
+
 
 
 function int(value)
