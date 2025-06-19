@@ -15,7 +15,7 @@ local myFont
 local player = {}
 
 function love.load()
-    myFont = love.graphics.newFont("fonts/ConcertOne-Regular.ttf", 100)
+    myFont = love.graphics.newFont("fonts/mine-sweeper.ttf", 100)
 
     player.x = GAME_WIDTH / 2 -- Center player initially
     player.y = GAME_HEIGHT / 2
@@ -38,7 +38,7 @@ function love.draw()
     love.graphics.draw(player.sprite, player.x - (player.sprite:getWidth() / 2), player.y - (player.sprite:getHeight() / 2))
     love.graphics.circle("fill",player.x,player.y,10)
     love.graphics.setFont(myFont)
-    love.graphics.print("Game made \nin LÖVE 2D!", 100, 100)
+    love.graphics.print("Game made \nin LOVE 2D!", 100, 100)
 
 
 
